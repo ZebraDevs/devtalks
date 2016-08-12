@@ -1,0 +1,267 @@
+<templateSet group="user">
+  <template name="emdk_gradle_provided" value="provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/bhecox/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.0_API-19/libs')" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="c" value="false" />
+      <option name="OC_DECLARATION_C" value="false" />
+      <option name="OC_STATEMENT_C" value="false" />
+      <option name="OC_EXPRESSION_C" value="false" />
+      <option name="cpp" value="false" />
+      <option name="OC_DECLARATION_CPP" value="false" />
+      <option name="OC_STATEMENT_CPP" value="false" />
+      <option name="OC_EXPRESSION_CPP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="emdk_gradle_excluded" value="exclude: ['com.symbol.emdk.jar']," toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="c" value="false" />
+      <option name="OC_DECLARATION_C" value="false" />
+      <option name="OC_STATEMENT_C" value="false" />
+      <option name="OC_EXPRESSION_C" value="false" />
+      <option name="cpp" value="false" />
+      <option name="OC_DECLARATION_CPP" value="false" />
+      <option name="OC_STATEMENT_CPP" value="false" />
+      <option name="OC_EXPRESSION_CPP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_imports" value="import android.util.Log;&#10;import android.widget.TextView;&#10;&#10;import com.symbol.emdk.EMDKManager;&#10;import com.symbol.emdk.EMDKResults;&#10;import com.symbol.emdk.EMDKManager.EMDKListener;&#10;import com.symbol.emdk.EMDKManager.FEATURE_TYPE;&#10;import com.symbol.emdk.scanandpair.ScanAndPairConfig;&#10;import com.symbol.emdk.scanandpair.ScanAndPairConfig.ScanDataType;&#10;import com.symbol.emdk.scanandpair.ScanAndPairConfig.TriggerType;&#10;import com.symbol.emdk.scanandpair.ScanAndPairException;&#10;import com.symbol.emdk.scanandpair.StatusData;&#10;import com.symbol.emdk.scanandpair.ScanAndPairConfig.NotificationType;&#10;import com.symbol.emdk.scanandpair.ScanAndPairResults;&#10;import com.symbol.emdk.scanandpair.ScanAndPairManager;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_implements" value="implements EMDKListener,&#10;&#9;&#9;&#9;com.symbol.emdk.scanandpair.ScanAndPairManager.StatusListener" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_globals" value="ScanAndPairManager.StatusListener statusCallbackObj = this;&#10;private EMDKManager emdkManager;&#10;private ScanAndPairManager scanAndPairMgr;&#10;&#10;TextView tv1 = null;&#10;&#10;StringBuilder sb = new StringBuilder();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_getEMDKManger" value="EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);&#10;&#10;&#9;&#9;// Check the return status of getEMDKManager ()&#10;if (results.statusCode == EMDKResults.STATUS_CODE.SUCCESS) {&#10;    UpdateUI(&quot;Successfuly requested EMDKManager Object&quot;);&#10;&#10;} else {&#10;    UpdateUI(&quot;Failure while requesting EMDKManager Object: &quot;+ results.getStatusString());&#10;}&#10;&#10;&#9;&#9;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_ondestroy" value="@Override&#10;&#9;protected void onDestroy() {&#10;&#9;&#9;super.onDestroy();&#10;&#10;&#9;&#9;if (emdkManager != null) {&#10;&#9;&#9;&#9;// Clean up the objects created by EMDK manager&#10;&#9;&#9;&#9;emdkManager.release();&#10;&#9;&#9;&#9;emdkManager=null;&#10;&#9;&#9;}&#10;&#9;}&#10;" description="cleanup emdk references" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_manifest_permission" value="&lt;uses-permission android:name=&quot;com.symbol.emdk.permission.EMDK&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="emdk_manifest_uses_library" value="&lt;uses-library android:name=&quot;com.symbol.emdk&quot;/&gt; " description="&lt;application&gt; node" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_onstatus_switch" value="        switch (statusData.getState()) {&#10;            case WAITING:&#10;                UpdateUI(&quot;Waiting for trigger press to scan the barcode&quot;);&#10;                break;&#10;&#10;            case SCANNING:&#10;                UpdateUI(&quot;Scanner Beam is on, aim at the barcode.&quot;);&#10;                break;&#10;&#10;            case DISCOVERING:&#10;                UpdateUI(&quot;Discovering for the Bluetooth device&quot;);&#10;                break;&#10;&#10;            case PAIRED:&#10;                UpdateUI(&quot;Bluetooth device is paired successfully&quot;);&#10;                break;&#10;&#10;            case UNPAIRED:&#10;                UpdateUI(&quot;Bluetooth device is un-paired successfully&quot;);&#10;                break;&#10;&#10;            default:&#10;            case ERROR:&#10;                UpdateUI(statusData.getState().toString()+&quot;: &quot; + statusData.getResult());&#10;                break;&#10;        }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_updateui" value="    void UpdateUI(String message)&#10;    {&#10;        final String text = message;&#10;&#10;        runOnUiThread(new Runnable() {&#10;            public void run() {&#10;                sb.insert(0,text + &quot;\n----------------------------------------\n&quot;);&#10;                tv1.setText(sb.toString());&#10;&#10;            }&#10;        });&#10;    }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_onopened" value="this.emdkManager = emdkManager;&#10;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_findtextview" value="tv1 = (TextView) findViewById(R.id.tv1);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_getInstance_scanAndPair" value="                if(scanAndPairMgr == null) {&#10;                    scanAndPairMgr = (ScanAndPairManager) emdkManager.getInstance(FEATURE_TYPE.SCANANDPAIR);&#10;        &#10;                    if(scanAndPairMgr != null) {&#10;                        try {&#10;                            scanAndPairMgr.addStatusListener(statusCallbackObj);&#10;                           &#10;        &#10;        &#10;                        } catch (ScanAndPairException e) {&#10;                            e.printStackTrace();&#10;                        }&#10;                    }&#10;                }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_useScan" value="                    //Pair with BlueTooth Printer&#10;                    scanAndPairMgr.config.notificationType = NotificationType.BEEPER;&#10;                    &#10;                    scanAndPairMgr.config.scanInfo.scanTimeout = 5000;&#10;                    scanAndPairMgr.config.scanInfo.deviceIdentifier = ScanAndPairConfig.DeviceIdentifier.DEFAULT;&#10;                    scanAndPairMgr.config.scanInfo.triggerType = TriggerType.SOFT;&#10;                    scanAndPairMgr.config.alwaysScan = true;&#10;&#10;                    scanAndPairMgr.config.scanInfo.scanDataType = ScanDataType.MAC_ADDRESS;&#10;&#10;                    ScanAndPairResults resultCode = scanAndPairMgr.scanAndPair(&quot;0000&quot;);&#10;                    //ScanAndPairResults resultCode = scanAndPairMgr.scanAndUnpair();&#10;&#10;                    if (!resultCode.equals(ScanAndPairResults.SUCCESS))&#10;                        UpdateUI(resultCode.toString() + &quot;\n\n&quot;);&#10;&#10;                    " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_scanpair_useDeviceName" value="                    //Pair with Payment Module&#10;                    scanAndPairMgr.config.notificationType = NotificationType.BEEPER;&#10;                    &#10;                    scanAndPairMgr.config.alwaysScan = false;&#10;&#10;                    scanAndPairMgr.config.bluetoothInfo.deviceName = &quot;MPOS-64475985&quot;;&#10;                    scanAndPairMgr.config.scanInfo.scanDataType = ScanDataType.DEVICE_NAME;&#10;&#10;                    ScanAndPairResults resultCode = scanAndPairMgr.scanAndPair(&quot;0000&quot;);&#10;                    //ScanAndPairResults resultCode = scanAndPairMgr.scanAndUnpair();&#10;&#10;                    if (!resultCode.equals(ScanAndPairResults.SUCCESS))&#10;                        UpdateUI(resultCode.toString() + &quot;\n\n&quot;);&#10;&#10;                    " toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_manifest_uses_library_nonzebra" value="&lt;uses-library android:name=&quot;com.symbol.emdk&quot; android:required=&quot;false&quot; /&gt;" description="&lt;application&gt; node" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="emdk_check_is_zebra" value="if(android.os.Build.MANUFACTURER.contains(&quot;Zebra Technologies&quot;) || android.os.Build.MANUFACTURER.contains(&quot;Motorola Solutions&quot;) ){&#10;            &#10;        }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_declare_emdkwrapper" value="    public class EMDKWrapper implements EMDKManager.EMDKListener {&#10;        EMDKManager emdkManager = null;&#10;        &#10;        void getEMDKManager() {&#10;            EMDKResults results = EMDKManager.getEMDKManager(getApplicationContext(), this);&#10;&#10;            if (results.statusCode != EMDKResults.STATUS_CODE.SUCCESS) {&#10;                //Failed to request the EMDKManager&#10;            }&#10;        }&#10;&#10;&#10;        void release() {&#10;            if (emdkManager != null) {&#10;                emdkManager.release();&#10;                emdkManager = null;&#10;            }&#10;        }&#10;&#10;        @Override&#10;        public void onOpened(EMDKManager emdkManager) {&#10;            this.emdkManager = emdkManager;&#10;        }&#10;&#10;&#10;        @Override&#10;        public void onClosed() {&#10;            if (emdkManager != null) {&#10;                emdkManager.release();&#10;                emdkManager = null;&#10;            }&#10;        }&#10;    }" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="emdk_gradle_provided_full" value="dependencies {&#10;    compile fileTree(exclude: ['com.symbol.emdk.jar'],include: ['*.jar'], dir: 'libs')&#10;    testCompile 'junit:junit:4.12'&#10;    compile 'com.android.support:appcompat-v7:23.4.0'&#10;    provided fileTree(include: ['com.symbol.emdk.jar'], dir: '/Users/bhecox/Library/Android/sdk/add-ons/addon-symbol-emdk_v4.0_API-19/libs')&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="c" value="false" />
+      <option name="OC_DECLARATION_C" value="false" />
+      <option name="OC_STATEMENT_C" value="false" />
+      <option name="OC_EXPRESSION_C" value="false" />
+      <option name="cpp" value="false" />
+      <option name="OC_DECLARATION_CPP" value="false" />
+      <option name="OC_STATEMENT_CPP" value="false" />
+      <option name="OC_EXPRESSION_CPP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
