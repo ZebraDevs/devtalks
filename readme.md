@@ -1,6 +1,6 @@
 DevTalks - Live Templates
 
-Place the user.xml in the following folder or your development system.
+Place the user.xml file in the following folder on your development system.
 
 Note: modify the path you reflect your system paths.
 You may also need to modify the android studio version number.
